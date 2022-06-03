@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *  * main - Entry point
+ *  * main - Program exec start here
  *   *
  *    * Return: Always 0 (Success)
  **/
@@ -10,9 +10,7 @@ int main(void)
 {
 	char low;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	for (low = 'A'; low <= 'Z'; low++)
+	for (low = 'z'; low >= 'a'; low--)
 		putchar(low);
 	putchar('\n');
 
