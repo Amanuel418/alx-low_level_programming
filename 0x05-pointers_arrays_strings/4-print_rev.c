@@ -13,7 +13,10 @@ void print_rev(char *s)
 	x = i;
 	for (int j = x; s[j] == s[0]; j--)
 	{
+		if (s[j] == 0)
+			continue;
+
 		_putchar(s[j]);
-		_putchar("\n");
 	}
+	_putchar('\n');
 }
