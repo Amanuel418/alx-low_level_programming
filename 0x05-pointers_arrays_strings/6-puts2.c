@@ -1,13 +1,15 @@
 #include "main.h"
 /**
- * _puts2 - updates the value it points to to 98
- * @str: character value.
+ * puts2 - prints one char out of 2 of a string.
+ * @str: character value
  */
 void puts2(char *str)
 {
-int i;
+int i, a;
 
-for (i = 0; str[i] != '\0'; i += 2)
-_putchar(str[i]);
+for (i = 0; str[i] != '\0'; i++)
+;
+for (a = 0; a < i; a += 2)
+_putchar(str[a]);
 _putchar('\n');
 }
