@@ -18,7 +18,7 @@ for (j = 0; src[j] != 0; j++)
 {
 dest[i] = src[j];
 i++;
-if (j == n)
+if (j == n - 1)
 break;
 }
 return (dest);
