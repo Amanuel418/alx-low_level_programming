@@ -8,21 +8,16 @@
 char *cap_string(char *n)
 {
 	int i;
-	int j;
 
-	j = i - 1;
 	for (i = 0; n[i] != 0; i++)
 	{
-		if (n[0] || n[j] == 32)
+		if (i == 0 && n[i] >= 97 && n[i] <= 122)
 		{
-			if (n[i] >= 97 && n[i] <= 122)
-			{
-				n[i] = n[i] - 32;
-			}
-			else
-			{
-				continue;
-			}
+			n[i] -= 32;
+		}
+		else if (n[i - 1] == ' ' && n[i] >= 97 && n[i] <= 122)
+		{
+			n[i] -= 32;
 		}
 	}
 	return (n);
