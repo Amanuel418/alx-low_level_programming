@@ -1,5 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,4 +14,5 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
-#endif /* MAIN_H */
+
+#endif /* FUNCTION_POINTERS_H */
