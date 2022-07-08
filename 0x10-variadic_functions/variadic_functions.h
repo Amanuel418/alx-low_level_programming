@@ -13,13 +13,12 @@ void print_char(va_list);
 void print_int(va_list);
 void print_float(va_list);
 void print_string(va_list);
-
 /**
- *  * struct format_t - entry signs
- *   *
- *    * @t: type of variables
- *     * @f: function to print type of variable
- *      */
+ * struct format_t - entry signs
+ *
+ * @t: type of variables
+ * @f: function to print type of variable
+ */
 typedef struct format_t
 {
 	char *t;
