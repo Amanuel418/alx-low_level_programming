@@ -23,4 +23,4 @@ sum += va_arg(ag, int);
 
 va_end(ag);
 return (sum);
-}}
+}
