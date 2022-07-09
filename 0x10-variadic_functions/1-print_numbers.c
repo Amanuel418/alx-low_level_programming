@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdarg.h>
+
 /**
  * print_numbers - entry point
  * @separator: get character colon
@@ -8,20 +7,19 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
-	va_start(ap,n);
+va_list args;
+unsigned int count;
 
-	unsigned int i;
-
-	for (i = 0; i < ap; i++)
-	{
-		printf("%d", va_arg(ap, int);
-		if (separator != NULL)
-		{
-			if (i < n - 1)
-				printf("%p", separator);
-		}
-	}
-	_putchar('\n');
-	va_end(ap);
+va_start(args, n);
+for (count = 0; count < n; count++)
+{
+printf("%d", va_arg(args, int));
+if (separator != NULL)
+{
+if (count < n - 1)
+printf("%s", separator);
+}
+}
+putchar('\n');
+va_end(args);
 }
