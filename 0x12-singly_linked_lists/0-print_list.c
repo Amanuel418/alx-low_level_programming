@@ -20,4 +20,4 @@ h = h->next;
 c++;
 }
 return (c);
-}}
+}
