@@ -7,7 +7,7 @@
  **/
 size_t print_listint(const listint_t *h)
 {
-listint_t *linode = h;
+const listint_t *linode = h;
 size_t incr = 0;
 
 while (linode)
