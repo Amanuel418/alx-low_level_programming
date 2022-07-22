@@ -20,5 +20,5 @@ j = j * 2 + 1;
 else
 j = j * 2 + 0;
 }
-return (vec);
+return (j);
 }
